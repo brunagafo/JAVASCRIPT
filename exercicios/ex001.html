@@ -5,8 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAVASCRIPT</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;            background-image: linear-gradient(to top, rgb(239, 228, 172), transparent);
+            font-family: 'Courier New', Courier, monospace;            
+        }
+        body h1 {            
+            padding: 20px;
+            padding-top: 30px;
+            text-align: center;
+            font-size: 40px;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <h1>Olá, mundo!</h1>
+    <script>
+        window.alert('Meu primeiro alert!')
+        //Em confirm e prompt, por enquanto as informações coletadas não foram armazenadas em nenhum lugar
+        //Em confirm, a janela gera as opções "ok" ou "cancelar"
+        window.confirm('Está gostando de javascript?')
+        //Em prompt, a janela abre um input para receber um texto 
+        window.prompt('Qual é seu nome?')
+    </script>
 </body>
 </html>
