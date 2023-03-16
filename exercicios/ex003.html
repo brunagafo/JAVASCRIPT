@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;            background-image: linear-gradient(to top, rgb(239, 228, 172), transparent);
+            font-family: 'Courier New', Courier, monospace;            
+        }
+        body h1 {            
+            padding: 20px;
+            padding-top: 30px;
+            text-align: center;
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tratamento de Dados</h1>
+    <script>
+        //Geramos abaixo a conversão do dado string recebido pelo prompt para Number -> Int ou Number -> Float, logo a var soma irá tratar n1 e n2 como números, e não strings
+        var n1 = Number.parseFloat(window.prompt('Digite um número'))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número'))
+        //Podemos também usar somente Number(n1) na conversão, e o Js faz automático
+
+        var soma = n1 + n2
+        // + para adição ou concatenação
+
+        //window.alert('A soma dos números é ' + soma + '!') é com concatenação
+        window.alert(`A soma dos números é ${soma}!`) // é com template string
+    </script>
+
+
+</body>
+</html>

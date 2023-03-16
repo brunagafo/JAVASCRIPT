@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        html {
+            background-image: linear-gradient(to top, rgb(239, 228, 172), transparent);
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+        }
+        div {
+            padding: 30px;
+            margin: auto;
+            width: fit-content;
+            border: 1px dashed black;
+            font-size: 2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <script>
+            var nome = window.prompt('Qual é seu nome?')
+            document.write(`Olá ${nome}, seu nome tem ${nome.length} letras.<br>`) 
+            document.write(`Seu nome em letras maiúsculas fica: ${nome.toUpperCase()}`)
+        </script>
+    </div>
+</body>
+</html>
