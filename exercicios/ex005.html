@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros passos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Javascript</p>
+    <div id="msg">Clique em mim</div>
+    <br>
+
+    <script>
+        var p0 = window.document.getElementsByTagName('p')[0]
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var corpo = window.document.body
+        //var d = window.document.getElementById('msg')
+        var d = document.querySelector('#msg')
+
+        p0.style.color = 'purple'
+        corpo.style.background = 'grey'
+
+       //window.document.write('Replicando parágrafo [0] com script por tag. Resultado: ' + p1.innerText)
+
+       //Abaixo, a diferença entre innerText e innerHTML
+        //document.write(p1.innerHTML)
+        d.innerText = 'Mudando a mensagem da div com script'
+        //Opção completa: window.document.getElementById('msg').innerText = 'Mudando a mensagem da div com script'
+        d.style.background = 'purple'
+
+        
+    </script>
+
+</body>
+</html>
