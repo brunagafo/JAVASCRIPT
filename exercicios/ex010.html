@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #box {
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+            outline: 1px solid black;
+            padding: 20px;
+            padding-top: 1px;
+        }
+        #box>h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>SISTEMA DE MULTAS</h1>
+        Velocidade do carro: <input type="number" name="txtvel" id="txtvel">
+        <input type="button" value="Verificar" onclick="calcular()"> 
+        <p id="res">Resultado</p>
+    </div>
+
+    <script>              
+        function calcular() { 
+            var tvel = document.querySelector('#txtvel')
+            var vel = Number(tvel.value)
+            var res = document.querySelector('#res')
+
+            res.innerHTML = (`Sua velocidade atual é de <strong>${vel}km/h</strong>.`)  
+            if (vel > 60){
+                res.innerHTML += `<p>Você foi <strong>multado</strong> por excesso de velocidade...</p>`
+            }
+            res.innerHTML += ('<p>Dirija sempre com o cinto de segurança!</p>')
+        }
+
+    </script>
+</body>
+</html>

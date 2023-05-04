@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body {
+            height: 98vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(210, 207, 207, 0.516)
+        }
+        #box {
+            background-image: linear-gradient(to top, darkgrey,rgb(241, 234, 234));
+            width: 350px;
+            height: 160px;
+            padding: 30px;            
+            text-align: center;
+            border-radius: 20px;
+        }
+        #box>h1 {
+            font-size: 20px;
+        }
+        #box2 {
+            padding: 30px;
+        }
+        #button {
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: none;
+            border-radius: 20px;
+            color: rgb(81, 80, 80);
+            background-color: white;
+        }
+        #button:hover {
+            color: white;
+            background-color: gray;
+            transition: 0.5s;
+        }
+        #pais {
+            height: 25px;
+        }
+        #res {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1><label for="pais">Digite o nome de seu País: </label></h1>
+        <div id="box2">
+            <input type="text" name="pais" id="pais" required max-length="30" placeholder="Nome do País">
+            <input type="button" value="Verificar" id="button" onclick="verificar()">
+            <p id="res"></p>
+        </div>
+    </div>
+
+    <script>
+        function verificar(){
+            var txtpa = document.querySelector('#pais')
+            var pa = String(txtpa.value)
+            var res = document.querySelector('#res')
+                if (pa == 'Brasil') {
+                    res.innerHTML = `Tendo nascido em ${pa}, você é brasileiro!`
+                } else {
+                    res.innerHTML = `Tendo nascido em ${pa}, você é estrangeiro no Brasil.`
+                }
+        }
+
+    </script>
+</body>
+</html>
