@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body {
+    background: rgba(70, 114, 236, 0.518);
+    font: normal 15pt 'Courier New', Courier, monospace;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    padding: 15px;
+    border-radius: 10px;    
+    margin: auto;
+    background: white;
+    width: 600px;    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.333);
+    text-align: center;
+    font-size: 13pt;
+}
+
+#p-ano {
+    text-align: left;
+}
+
+#p-sex {
+    text-align: left;
+}
+
+#botao {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(70, 142, 236, 0.553);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#botao:hover {
+    background-color: rgba(70, 142, 236, 0.322);
+    transition-duration: 0.5s;
+}
+
+#res {
+    padding: 10px;
+    border: 1px dashed rgba(70, 142, 236, 0.322);
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
