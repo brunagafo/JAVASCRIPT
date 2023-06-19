@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos Contar</h1>
+    </header>
+
+    <section>
+        <div>
+            <label for="inicio">Número inicial: </label>
+            <input type="number" name="inicio" id="inicio" class="form" required>
+        </div>
+        <div>
+            <label for="fim">Número final: </label>
+            <input type="number" name="fim" id="fim" class="form" required>
+        </div>
+        <div>
+            <label for="frequencia">Frequência: </label>
+            <input type="number" name="frequencia" id="frequencia" class="form" required>
+        </div>
+        <div id="divbotao">
+            <input type="button" value="Calcular" id="botao" onclick="calcular()">
+        </div>
+
+        <div id="res">
+        Resultado...  
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Cursoemvideo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

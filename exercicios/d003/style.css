@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body {
+    background: rgb(70,142,236);
+    font: normal 15pt 'Courier New', Courier, monospace;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    padding: 15px;
+    border-radius: 10px;    
+    margin: auto;
+    background: white;
+    width: 500px;    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.333);
+}
+
+div {
+    padding: 15px;
+}
+
+#divbotao {
+    display: flex;
+    justify-content: center;
+}
+#botao {
+    padding: 15px;
+    font-size: medium;
+    border: none;
+    border-radius: 25px;
+}
+
+#botao:hover {
+    background-color: darkgray;
+}
+
+#res {
+    background-color: lightgray;
+    text-align: center;
+    font-size: medium;
+    line-height: 2;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}

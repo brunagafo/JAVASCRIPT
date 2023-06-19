@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    background: rgb(70,142,236);
+    font: normal 15pt 'Courier New', Courier, monospace;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    padding: 15px;
+    border-radius: 10px;    
+    margin: auto;
+    background: white;
+    width: 500px;    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.333);
+}
+
+#cxnum {
+   text-align: center; 
+}
+
+#cxtab {
+    padding: 30px;
+    text-align: center;
+}
+
+#seltab {
+    min-width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
