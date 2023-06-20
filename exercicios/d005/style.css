@@ -11,12 +11,22 @@ header {
 }
 
 section {
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;    
     margin: auto;
     background: white;
-    width: 500px;    
+    width: 600px;    
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.333);
+    font-size: medium;
+}
+
+div {
+    padding: 10px;
+}
+
+#screen {
+    padding: 10px;
+    width: 300px;
 }
 
 footer {
